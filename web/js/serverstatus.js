@@ -281,7 +281,7 @@ function uptime() {
                 var PING_189 = result.servers[i].ping_189.toFixed(0);
                 var PING_10086 = result.servers[i].ping_10086.toFixed(0);
                 var pingTime = result.servers[i].time_10010 + "ms💻" + result.servers[i].time_189 + "ms💻" + result.servers[i].time_10086 + "ms"
-                if (PING_10010 >= 10 || PING_189 >= 10 || PING_10086 >= 10)
+                if (PING_10010 >= 60 || PING_189 >= 60 || PING_10086 >= 60)
                     TableRow.children["ping"].children[0].children[0].className = "progress-bar progress-bar-danger";
                 else
                     TableRow.children["ping"].children[0].children[0].className = "progress-bar progress-bar-success";
