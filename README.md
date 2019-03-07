@@ -74,7 +74,7 @@ make
 }       
 ```
 
-三、拷贝ServerStatus/status到你的网站目录        
+三、拷贝ServerStatus/web/* 到你的网站目录        
 例如：
 ```
 sudo cp -r ServerStatus/web/* /home/wwwroot/default
